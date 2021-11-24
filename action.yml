@@ -1,0 +1,15 @@
+name: 'Issue Finder'
+description: 'retrieve issues on Angular open-source projects'
+inputs:
+  repositories:
+    description: 'list of repositories'
+    required: true
+  token:
+    description: 'GitHub API token'
+    required: true
+outputs:
+  issues: # id of output
+    description: 'list of issues'
+runs:
+  using: 'node12'
+  main: 'index.js'
